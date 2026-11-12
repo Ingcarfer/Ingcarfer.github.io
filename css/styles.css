@@ -1,4 +1,4 @@
-/* Estilo basado en la plantilla de MoureDev: modo oscuro, acento verde "grass" y bordes redondeados */
+/* Modo oscuro, acento verde y bordes redondeados */
 :root {
   --fondo: #111113;
   --tarjeta: #18191B;
@@ -253,8 +253,6 @@ hr { width: 100%; border: 0; border-top: 1px solid var(--borde); margin: 0; }
 /* ---------- Pie ---------- */
 .footer { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-align: center; color: var(--gris); }
 .footer .media { justify-content: center; margin: 0; }
-.credit { font-size: 0.8rem; color: var(--gris-2); }
-
 /* Aviso de copiado */
 .toast {
   position: fixed;
