@@ -10,7 +10,7 @@
   <meta property="og:description" content="Ingeniero electromecánico que empezó reparando aires acondicionados y terminó haciendo el software de la empresa.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ingcarfer.github.io/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%225%22 fill=%22%231E4FA3%22/><text x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2215%22 fill=%22white%22 text-anchor=%22middle%22>CF</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%2216%22 fill=%22%2313294B%22/><text x=%2216%22 y=%2221%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2213%22 fill=%22white%22 text-anchor=%22middle%22>CF</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,181 +19,185 @@
 </head>
 <body>
 
-  <header class="top">
-    <a class="top-name" href="#inicio">Carlos Fernández</a>
-    <nav class="top-nav" aria-label="Secciones">
-      <a href="#dismin">Proyecto</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#estudios">Estudios</a>
-      <a href="#contacto">Contacto</a>
-      <a href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-    </nav>
-  </header>
+  <div class="layout">
 
-  <main>
+    <aside class="side">
+      <div class="avatar">
+        <span aria-hidden="true">CF</span>
+        <!-- Para poner tu foto: guarda una imagen cuadrada en assets/foto.jpg -->
+        <img src="assets/foto.jpg" alt="Foto de Carlos Fernández" onerror="this.remove()">
+      </div>
 
-    <section class="intro" id="inicio">
-      <h1>Empecé reparando aires acondicionados. Terminé haciendo el software de la empresa.</h1>
-      <div class="intro-text">
-        <p>Soy Carlos Fernández, ingeniero electromecánico y desarrollador full stack junior en Bogotá. Estoy en séptimo semestre de Ingeniería de Sistemas.</p>
+      <p class="side-name">Carlos Fernández</p>
+      <p class="side-role">Desarrollador full stack junior<br>Ingeniero electromecánico</p>
+      <p class="side-place">Bogotá, Colombia</p>
+
+      <nav class="side-nav" aria-label="Secciones">
+        <a href="#dismin">Proyecto</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#estudios">Estudios</a>
+      </nav>
+
+      <div class="side-contact">
+        <p class="side-status">Disponible para trabajar, presencial en Bogotá o remoto.</p>
+        <ul>
+          <li><a href="mailto:cafernandezs@itc.edu.co">cafernandezs@itc.edu.co</a></li>
+          <li><a href="https://wa.me/573178546723" target="_blank" rel="noopener">+57 317 854 6723</a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/ingcarfer" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+        <a class="side-cv" href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener">Descargar hoja de vida (PDF)</a>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <section class="intro" id="inicio">
+        <h1>Empecé reparando aires acondicionados. Terminé haciendo el software de la empresa.</h1>
+        <p>Soy ingeniero electromecánico y desarrollador full stack junior. Estoy en séptimo semestre de Ingeniería de Sistemas.</p>
         <p>En DISMIN LTDA. hacía mantenimiento de equipos de climatización. Cada servicio terminaba en un acta que se escribía a mano y se entregaba días después. Construí Dismin+ para que el acta salga del celular del técnico al terminar el trabajo. Hoy la empresa lo usa a diario.</p>
         <p>Trabajo sobre todo con Laravel, Nuxt (Vue), MySQL y Docker en servidores Linux.</p>
-      </div>
-      <p class="intro-links">
-        <a href="#contacto">Escríbeme</a>
-        <a href="https://github.com/ingcarfer" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </section>
+      </section>
 
-    <section class="block" id="dismin">
-      <h2>Dismin+</h2>
-      <p class="lead">Sistema de mantenimiento y actas técnicas para DISMIN LTDA. Lo diseñé, lo programé y lo puse en producción yo solo, entre 2025 y 2026.</p>
+      <section class="block" id="dismin">
+        <h2>Dismin+</h2>
+        <p class="lead">Sistema de mantenimiento y actas técnicas para DISMIN LTDA. Lo diseñé, lo programé y lo puse en producción yo solo, entre 2025 y 2026.</p>
 
-      <dl class="compare">
-        <div>
-          <dt>Antes</dt>
-          <dd>El técnico tomaba notas en campo, alguien las pasaba a un documento y el acta llegaba al cliente días después. Los mismos datos se escribían varias veces.</dd>
+        <dl class="compare">
+          <div>
+            <dt>Antes</dt>
+            <dd>El técnico tomaba notas en campo, alguien las pasaba a un documento y el acta llegaba al cliente días después. Los mismos datos se escribían varias veces.</dd>
+          </div>
+          <div class="now">
+            <dt>Ahora</dt>
+            <dd>El técnico llena el servicio en el celular, firma, y el PDF del acta queda listo en minutos. Cada equipo tiene su historial de mantenimientos en un solo lugar.</dd>
+          </div>
+        </dl>
+
+        <h3>Cómo está hecho</h3>
+        <ul class="plain">
+          <li>Una API en Laravel 12 con login por tokens (Sanctum) y permisos según el rol: administrador, técnico o representante del cliente.</li>
+          <li>Una aplicación web en Nuxt 4 que se instala en el celular como app (PWA), pensada para usarla en campo.</li>
+          <li>Generación de actas en PDF con firmas y códigos QR para identificar cada sede.</li>
+          <li>Base de datos MySQL con triggers y procedimientos almacenados para que los datos no se dupliquen ni queden a medias.</li>
+          <li>Todo corre en contenedores Docker en un servidor Linux de Oracle Cloud. Se publica a internet con un túnel de Cloudflare, sin abrir puertos del servidor.</li>
+        </ul>
+
+        <div class="demo">
+          <h3>Pruébalo</h3>
+          <p>Hay una copia de demostración con datos de prueba en <a href="https://appdemo.codefp.com/" target="_blank" rel="noopener">appdemo.codefp.com</a>. Cada usuario ve cosas distintas según su rol.</p>
+          <table>
+            <thead>
+              <tr><th scope="col">Rol</th><th scope="col">Usuario</th><th scope="col">Contraseña</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Administrador</td>
+                <td><button class="copy" data-copy="admin@disminltda.com">admin@disminltda.com</button></td>
+                <td><button class="copy" data-copy="Admin@01">Admin@01</button></td>
+              </tr>
+              <tr>
+                <td>Técnico</td>
+                <td><button class="copy" data-copy="tecnico@disminltda.com">tecnico@disminltda.com</button></td>
+                <td><button class="copy" data-copy="Tecnico@01">Tecnico@01</button></td>
+              </tr>
+              <tr>
+                <td>Representante</td>
+                <td><button class="copy" data-copy="Representante1@disminltda.com">Representante1@disminltda.com</button></td>
+                <td><button class="copy" data-copy="Representante@01">Representante@01</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">Toca un usuario o una contraseña para copiarlo.</p>
+          <a class="button" href="https://appdemo.codefp.com/" target="_blank" rel="noopener">Abrir la demo</a>
         </div>
-        <div>
-          <dt>Ahora</dt>
-          <dd>El técnico llena el servicio en el celular, firma, y el PDF del acta queda listo en minutos. Cada equipo tiene su historial de mantenimientos en un solo lugar.</dd>
-        </div>
-      </dl>
+      </section>
 
-      <h3>Cómo está hecho</h3>
-      <ul class="plain">
-        <li>Una API en Laravel 12 con login por tokens (Sanctum) y permisos según el rol: administrador, técnico o representante del cliente.</li>
-        <li>Una aplicación web en Nuxt 4 que se instala en el celular como app (PWA), pensada para usarla en campo.</li>
-        <li>Generación de actas en PDF con firmas y códigos QR para identificar cada sede.</li>
-        <li>Base de datos MySQL con triggers y procedimientos almacenados para que los datos no se dupliquen ni queden a medias.</li>
-        <li>Todo corre en contenedores Docker en un servidor Linux de Oracle Cloud. Se publica a internet con un túnel de Cloudflare, sin abrir puertos del servidor.</li>
-      </ul>
+      <section class="block" id="experiencia">
+        <h2>Experiencia</h2>
 
-      <div class="demo">
-        <h3>Pruébalo</h3>
-        <p>Hay una copia de demostración con datos de prueba en <a href="https://appdemo.codefp.com/" target="_blank" rel="noopener">appdemo.codefp.com</a>. Cada usuario ve cosas distintas según su rol.</p>
-        <table>
-          <thead>
-            <tr><th scope="col">Rol</th><th scope="col">Usuario</th><th scope="col">Contraseña</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Administrador</td>
-              <td><button class="copy" data-copy="admin@disminltda.com">admin@disminltda.com</button></td>
-              <td><button class="copy" data-copy="Admin@01">Admin@01</button></td>
-            </tr>
-            <tr>
-              <td>Técnico</td>
-              <td><button class="copy" data-copy="tecnico@disminltda.com">tecnico@disminltda.com</button></td>
-              <td><button class="copy" data-copy="Tecnico@01">Tecnico@01</button></td>
-            </tr>
-            <tr>
-              <td>Representante</td>
-              <td><button class="copy" data-copy="Representante1@disminltda.com">Representante1@disminltda.com</button></td>
-              <td><button class="copy" data-copy="Representante@01">Representante@01</button></td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="note">Toca un usuario o una contraseña para copiarlo.</p>
-      </div>
-    </section>
+        <article class="entry">
+          <p class="when">Jun 2025 – Ago 2026</p>
+          <div>
+            <h3>Técnico y desarrollador full stack junior</h3>
+            <p class="where">DISMIN LTDA., Bogotá</p>
+            <p>Seguí atendiendo servicios en campo y, en paralelo, hice Dismin+ de principio a fin: base de datos, API, aplicación web, servidor y despliegue. Fue el primer software propio de la empresa y sigue en uso.</p>
+          </div>
+        </article>
 
-    <section class="block" id="experiencia">
-      <h2>Experiencia</h2>
+        <article class="entry">
+          <p class="when">Nov 2023 – Jun 2025</p>
+          <div>
+            <h3>Técnico de mantenimiento</h3>
+            <p class="where">DISMIN LTDA., Bogotá</p>
+            <p>Instalación, diagnóstico y mantenimiento preventivo y correctivo de aires acondicionados industriales y de precisión. Rehice la parte eléctrica de varios equipos, lo que bajó el tiempo de las reparaciones. Aquí vi el problema de las actas que luego resolví con Dismin+.</p>
+          </div>
+        </article>
 
-      <article class="entry">
-        <p class="when">Jun 2025 – Ago 2026</p>
-        <div>
-          <h3>Técnico y desarrollador full stack junior</h3>
-          <p class="where">DISMIN LTDA., Bogotá</p>
-          <p>Seguí atendiendo servicios en campo y, en paralelo, hice Dismin+ de principio a fin: base de datos, API, aplicación web, servidor y despliegue. Fue el primer software propio de la empresa y sigue en uso.</p>
-        </div>
-      </article>
+        <p class="ref">Referencia: Oscar Anaya, representante legal de DISMIN LTDA. <button class="copy" data-copy="3176408175">317 640 8175</button></p>
+      </section>
 
-      <article class="entry">
-        <p class="when">Nov 2023 – Jun 2025</p>
-        <div>
-          <h3>Técnico de mantenimiento</h3>
-          <p class="where">DISMIN LTDA., Bogotá</p>
-          <p>Instalación, diagnóstico y mantenimiento preventivo y correctivo de aires acondicionados industriales y de precisión. Rehice la parte eléctrica de varios equipos, lo que bajó el tiempo de las reparaciones. Aquí vi el problema de las actas que luego resolví con Dismin+.</p>
-        </div>
-      </article>
+      <section class="block" id="herramientas">
+        <h2>Con qué trabajo</h2>
+        <dl class="tools">
+          <div><dt>Backend</dt><dd>PHP 8 y Laravel 12, APIs REST, Sanctum, roles y permisos.</dd></div>
+          <div><dt>Frontend</dt><dd>Nuxt 4, Vue 3 (Composition API), JavaScript, PWA, CSS y Tailwind.</dd></div>
+          <div><dt>Datos</dt><dd>MySQL: modelado, normalización, triggers, procedimientos almacenados, transacciones.</dd></div>
+          <div><dt>Servidores</dt><dd>Linux (Ubuntu y Debian), Docker Compose, Cloudflare, Oracle Cloud, Git.</dd></div>
+        </dl>
+      </section>
 
-      <p class="ref">Referencia: Oscar Anaya, representante legal de DISMIN LTDA. <button class="copy" data-copy="3176408175">317 640 8175</button></p>
-    </section>
+      <section class="block" id="estudios">
+        <h2>Estudios</h2>
 
-    <section class="block" id="herramientas">
-      <h2>Con qué trabajo</h2>
-      <dl class="tools">
-        <div><dt>Backend</dt><dd>PHP 8 y Laravel 12, APIs REST, Sanctum, roles y permisos.</dd></div>
-        <div><dt>Frontend</dt><dd>Nuxt 4, Vue 3 (Composition API), JavaScript, PWA, CSS y Tailwind.</dd></div>
-        <div><dt>Datos</dt><dd>MySQL: modelado, normalización, triggers, procedimientos almacenados, transacciones.</dd></div>
-        <div><dt>Servidores</dt><dd>Linux (Ubuntu y Debian), Docker Compose, Cloudflare, Oracle Cloud, Git.</dd></div>
-      </dl>
-    </section>
+        <article class="entry">
+          <p class="when">En curso</p>
+          <div>
+            <h3>Ingeniería de Sistemas</h3>
+            <p class="where">Escuela Tecnológica Instituto Técnico Central (ETITC), séptimo semestre</p>
+          </div>
+        </article>
 
-    <section class="block" id="estudios">
-      <h2>Estudios</h2>
+        <article class="entry">
+          <p class="when">2025</p>
+          <div>
+            <h3>Técnico Profesional en Computación</h3>
+            <p class="where">ETITC</p>
+          </div>
+        </article>
 
-      <article class="entry">
-        <p class="when">En curso</p>
-        <div>
-          <h3>Ingeniería de Sistemas</h3>
-          <p class="where">Escuela Tecnológica Instituto Técnico Central (ETITC), séptimo semestre</p>
-        </div>
-      </article>
+        <article class="entry">
+          <p class="when">2022</p>
+          <div>
+            <h3>Ingeniero Electromecánico</h3>
+            <p class="where">ETITC. Tarjeta profesional desde 2023.</p>
+          </div>
+        </article>
 
-      <article class="entry">
-        <p class="when">2025</p>
-        <div>
-          <h3>Técnico Profesional en Computación</h3>
-          <p class="where">ETITC</p>
-        </div>
-      </article>
+        <article class="entry">
+          <p class="when">2021</p>
+          <div>
+            <h3>Certificación en Automatización Industrial</h3>
+            <p class="where">ETITC y FESTO Didactic: electroneumática y PLC.</p>
+          </div>
+        </article>
 
-      <article class="entry">
-        <p class="when">2022</p>
-        <div>
-          <h3>Ingeniero Electromecánico</h3>
-          <p class="where">ETITC. Tarjeta profesional desde 2023.</p>
-        </div>
-      </article>
+        <article class="entry">
+          <p class="when">2014</p>
+          <div>
+            <h3>Técnico en Instalación de Redes de Computadores</h3>
+            <p class="where">SENA</p>
+          </div>
+        </article>
+      </section>
 
-      <article class="entry">
-        <p class="when">2021</p>
-        <div>
-          <h3>Certificación en Automatización Industrial</h3>
-          <p class="where">ETITC y FESTO Didactic: electroneumática y PLC.</p>
-        </div>
-      </article>
+      <footer class="foot">
+        <p>¿Te interesa mi perfil? Escríbeme a <a href="mailto:cafernandezs@itc.edu.co">cafernandezs@itc.edu.co</a> <button class="copy small" data-copy="cafernandezs@itc.edu.co">Copiar</button> o por <a href="https://wa.me/573178546723" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </footer>
 
-      <article class="entry">
-        <p class="when">2014</p>
-        <div>
-          <h3>Técnico en Instalación de Redes de Computadores</h3>
-          <p class="where">SENA</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="block contact" id="contacto">
-      <h2>Contacto</h2>
-      <p class="lead">Busco trabajo como desarrollador full stack junior, presencial en Bogotá o remoto. También recibo proyectos.</p>
-      <ul class="contact-list">
-        <li>Correo: <a href="mailto:cafernandezs@itc.edu.co">cafernandezs@itc.edu.co</a> <button class="copy small" data-copy="cafernandezs@itc.edu.co">Copiar</button></li>
-        <li>Teléfono y WhatsApp: <a href="https://wa.me/573178546723" target="_blank" rel="noopener">+57 317 854 6723</a> <button class="copy small" data-copy="+573178546723">Copiar</button></li>
-        <li><a href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://github.com/ingcarfer" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener">Hoja de vida en PDF</a></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="foot">
-    <p>Carlos Alfonso Fernández Salas, Bogotá.</p>
-  </footer>
+    </main>
+  </div>
 
   <p class="toast" id="toast" role="status" aria-live="polite"></p>
 
