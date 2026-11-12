@@ -10,194 +10,242 @@
   <meta property="og:description" content="Ingeniero electromecánico que empezó reparando aires acondicionados y terminó haciendo el software de la empresa.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ingcarfer.github.io/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%2216%22 fill=%22%2313294B%22/><text x=%2216%22 y=%2221%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2213%22 fill=%22white%22 text-anchor=%22middle%22>CF</text></svg>">
+  <meta name="theme-color" content="#111113">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%2216%22 fill=%22%2346A758%22/><text x=%2216%22 y=%2221%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2213%22 fill=%22%23111113%22 text-anchor=%22middle%22>CF</text></svg>">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <!-- Logos de tecnologías (Devicon), igual que la plantilla de MoureDev -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="layout">
+  <!-- Íconos (Lucide, licencia ISC). Se usan con <svg><use href="#i-nombre"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3"/></symbol>
+    </defs>
+  </svg>
 
-    <aside class="side">
+  <main class="page">
+
+    <!-- Cabecera: avatar, nombre, cargo, ubicación y contacto -->
+    <header class="header">
       <div class="avatar">
         <span aria-hidden="true">CF</span>
         <!-- Para poner tu foto: guarda una imagen cuadrada en assets/foto.jpg -->
         <img src="assets/foto.jpg" alt="Foto de Carlos Fernández" onerror="this.remove()">
       </div>
-
-      <p class="side-name">Carlos Fernández</p>
-      <p class="side-role">Desarrollador full stack junior<br>Ingeniero electromecánico</p>
-      <p class="side-place">Bogotá, Colombia</p>
-
-      <nav class="side-nav" aria-label="Secciones">
-        <a href="#dismin">Proyecto</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#herramientas">Herramientas</a>
-        <a href="#estudios">Estudios</a>
-      </nav>
-
-      <div class="side-contact">
-        <p class="side-status">Disponible para trabajar, presencial en Bogotá o remoto.</p>
-        <ul>
-          <li><a href="mailto:cafernandezs@itc.edu.co">cafernandezs@itc.edu.co</a></li>
-          <li><a href="https://wa.me/573178546723" target="_blank" rel="noopener">+57 317 854 6723</a></li>
-          <li><a href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/ingcarfer" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-        <a class="side-cv" href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener">Descargar hoja de vida (PDF)</a>
+      <div class="header-info">
+        <h1>Carlos Fernández</h1>
+        <p class="skill">Desarrollador full stack junior e ingeniero electromecánico</p>
+        <p class="place"><svg class="i"><use href="#i-pin"/></svg> Bogotá, Colombia</p>
+        <nav class="media" aria-label="Contacto">
+          <a class="pill solid" href="mailto:cafernandezs@itc.edu.co"><svg class="i"><use href="#i-mail"/></svg> Correo</a>
+          <a class="pill" href="https://wa.me/573178546723" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg> WhatsApp</a>
+          <a class="pill" href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener"><svg class="i"><use href="#i-file"/></svg> CV</a>
+          <a class="pill round" href="https://github.com/ingcarfer" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+          <a class="pill round" href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+        </nav>
       </div>
-    </aside>
+    </header>
 
-    <main class="content">
+    <!-- Sobre mí -->
+    <section class="section about">
+      <h2><svg class="i"><use href="#i-user"/></svg> Sobre mí</h2>
+      <p class="about-lead">Empecé reparando aires acondicionados y terminé haciendo el software de la empresa.</p>
+      <p>En DISMIN LTDA. hacía mantenimiento de equipos de climatización. Cada servicio terminaba en un acta que se escribía a mano y se entregaba días después. Construí Dismin+ para que el acta salga del celular del técnico al terminar el trabajo. Hoy la empresa lo usa a diario.</p>
+      <p>Soy ingeniero electromecánico y estoy en séptimo semestre de Ingeniería de Sistemas. Busco trabajo como desarrollador full stack junior, presencial en Bogotá o remoto.</p>
+    </section>
 
-      <section class="intro" id="inicio">
-        <h1>Empecé reparando aires acondicionados. Terminé haciendo el software de la empresa.</h1>
-        <p>Soy ingeniero electromecánico y desarrollador full stack junior. Estoy en séptimo semestre de Ingeniería de Sistemas.</p>
-        <p>En DISMIN LTDA. hacía mantenimiento de equipos de climatización. Cada servicio terminaba en un acta que se escribía a mano y se entregaba días después. Construí Dismin+ para que el acta salga del celular del técnico al terminar el trabajo. Hoy la empresa lo usa a diario.</p>
-        <p>Trabajo sobre todo con Laravel, Nuxt (Vue), MySQL y Docker en servidores Linux.</p>
-      </section>
+    <hr>
 
-      <section class="block" id="dismin">
-        <h2>Dismin+</h2>
-        <p class="lead">Sistema de mantenimiento y actas técnicas para DISMIN LTDA. Lo diseñé, lo programé y lo puse en producción yo solo, entre 2025 y 2026.</p>
+    <!-- Tecnologías -->
+    <section class="section">
+      <h2><svg class="i"><use href="#i-layers"/></svg> Tecnologías</h2>
+      <ul class="badges">
+        <li class="badge"><i class="devicon-php-plain colored"></i> PHP</li>
+        <li class="badge"><i class="devicon-laravel-original colored"></i> Laravel</li>
+        <li class="badge"><i class="devicon-nuxtjs-plain colored"></i> Nuxt</li>
+        <li class="badge"><i class="devicon-vuejs-plain colored"></i> Vue</li>
+        <li class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+        <li class="badge"><i class="devicon-tailwindcss-original colored"></i> Tailwind</li>
+        <li class="badge"><i class="devicon-mysql-plain"></i> MySQL</li>
+        <li class="badge"><i class="devicon-docker-plain colored"></i> Docker</li>
+        <li class="badge"><i class="devicon-linux-plain"></i> Linux</li>
+        <li class="badge"><i class="devicon-cloudflare-plain colored"></i> Cloudflare</li>
+        <li class="badge"><i class="devicon-oracle-original"></i> Oracle Cloud</li>
+        <li class="badge"><i class="devicon-git-plain colored"></i> Git</li>
+      </ul>
+    </section>
 
-        <dl class="compare">
-          <div>
-            <dt>Antes</dt>
-            <dd>El técnico tomaba notas en campo, alguien las pasaba a un documento y el acta llegaba al cliente días después. Los mismos datos se escribían varias veces.</dd>
-          </div>
-          <div class="now">
-            <dt>Ahora</dt>
-            <dd>El técnico llena el servicio en el celular, firma, y el PDF del acta queda listo en minutos. Cada equipo tiene su historial de mantenimientos en un solo lugar.</dd>
-          </div>
-        </dl>
+    <!-- Experiencia -->
+    <section class="section">
+      <h2><svg class="i"><use href="#i-briefcase"/></svg> Experiencia</h2>
 
-        <h3>Cómo está hecho</h3>
-        <ul class="plain">
-          <li>Una API en Laravel 12 con login por tokens (Sanctum) y permisos según el rol: administrador, técnico o representante del cliente.</li>
-          <li>Una aplicación web en Nuxt 4 que se instala en el celular como app (PWA), pensada para usarla en campo.</li>
-          <li>Generación de actas en PDF con firmas y códigos QR para identificar cada sede.</li>
-          <li>Base de datos MySQL con triggers y procedimientos almacenados para que los datos no se dupliquen ni queden a medias.</li>
-          <li>Todo corre en contenedores Docker en un servidor Linux de Oracle Cloud. Se publica a internet con un túnel de Cloudflare, sin abrir puertos del servidor.</li>
-        </ul>
-
-        <div class="demo">
-          <h3>Pruébalo</h3>
-          <p>Hay una copia de demostración con datos de prueba en <a href="https://appdemo.codefp.com/" target="_blank" rel="noopener">appdemo.codefp.com</a>. Cada usuario ve cosas distintas según su rol.</p>
-          <table>
-            <thead>
-              <tr><th scope="col">Rol</th><th scope="col">Usuario</th><th scope="col">Contraseña</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Administrador</td>
-                <td><button class="copy" data-copy="admin@disminltda.com">admin@disminltda.com</button></td>
-                <td><button class="copy" data-copy="Admin@01">Admin@01</button></td>
-              </tr>
-              <tr>
-                <td>Técnico</td>
-                <td><button class="copy" data-copy="tecnico@disminltda.com">tecnico@disminltda.com</button></td>
-                <td><button class="copy" data-copy="Tecnico@01">Tecnico@01</button></td>
-              </tr>
-              <tr>
-                <td>Representante</td>
-                <td><button class="copy" data-copy="Representante1@disminltda.com">Representante1@disminltda.com</button></td>
-                <td><button class="copy" data-copy="Representante@01">Representante@01</button></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="note">Toca un usuario o una contraseña para copiarlo.</p>
-          <a class="button" href="https://appdemo.codefp.com/" target="_blank" rel="noopener">Abrir la demo</a>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-code"/></svg></span>
+        <div class="card-body">
+          <h3>Técnico y desarrollador full stack junior</h3>
+          <p class="sub">DISMIN LTDA., Bogotá</p>
+          <p class="desc">Seguí atendiendo servicios en campo y, en paralelo, hice Dismin+ de principio a fin: base de datos, API, aplicación web, servidor y despliegue. Fue el primer software propio de la empresa y sigue en uso.</p>
+          <ul class="badges small">
+            <li class="badge">Laravel 12</li><li class="badge">Nuxt 4</li><li class="badge">MySQL</li><li class="badge">Docker</li><li class="badge">Oracle Cloud</li>
+          </ul>
         </div>
-      </section>
+        <p class="date">Jun 2025 – Ago 2026</p>
+      </article>
 
-      <section class="block" id="experiencia">
-        <h2>Experiencia</h2>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-wrench"/></svg></span>
+        <div class="card-body">
+          <h3>Técnico de mantenimiento</h3>
+          <p class="sub">DISMIN LTDA., Bogotá</p>
+          <p class="desc">Instalación, diagnóstico y mantenimiento preventivo y correctivo de aires acondicionados industriales y de precisión. Rehice la parte eléctrica de varios equipos, lo que bajó el tiempo de las reparaciones. Aquí vi el problema de las actas que luego resolví con Dismin+.</p>
+        </div>
+        <p class="date">Nov 2023 – Jun 2025</p>
+      </article>
 
-        <article class="entry">
-          <p class="when">Jun 2025 – Ago 2026</p>
-          <div>
-            <h3>Técnico y desarrollador full stack junior</h3>
-            <p class="where">DISMIN LTDA., Bogotá</p>
-            <p>Seguí atendiendo servicios en campo y, en paralelo, hice Dismin+ de principio a fin: base de datos, API, aplicación web, servidor y despliegue. Fue el primer software propio de la empresa y sigue en uso.</p>
+      <p class="ref">Referencia: Oscar Anaya, representante legal de DISMIN LTDA. <button class="copy" data-copy="3176408175">317 640 8175</button></p>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section">
+      <h2><svg class="i"><use href="#i-folder"/></svg> Proyectos</h2>
+
+      <article class="card project">
+        <span class="icon-badge"><svg class="i"><use href="#i-folder"/></svg></span>
+        <div class="card-body">
+          <h3>Dismin+</h3>
+          <p class="sub">Sistema de mantenimiento y actas técnicas para DISMIN LTDA.</p>
+          <p class="desc">Lo diseñé, lo programé y lo puse en producción yo solo. Antes, el acta de cada servicio llegaba al cliente días después y los datos se escribían varias veces. Ahora el técnico llena el servicio en el celular, firma, y el PDF del acta queda listo en minutos, con el historial de cada equipo en un solo lugar.</p>
+          <ul class="desc list">
+            <li>API en Laravel 12 con login por tokens (Sanctum) y permisos por rol.</li>
+            <li>Aplicación en Nuxt 4 que se instala en el celular (PWA), pensada para campo.</li>
+            <li>Actas en PDF con firmas y códigos QR para cada sede.</li>
+            <li>MySQL con triggers y procedimientos almacenados para que los datos no se dupliquen.</li>
+            <li>Docker en un servidor Linux de Oracle Cloud, publicado con un túnel de Cloudflare.</li>
+          </ul>
+          <ul class="badges small">
+            <li class="badge">Laravel 12</li><li class="badge">Sanctum</li><li class="badge">Nuxt 4</li><li class="badge">PWA</li><li class="badge">MySQL</li><li class="badge">Docker</li><li class="badge">Cloudflare</li>
+          </ul>
+
+          <details class="demo">
+            <summary>Ver usuarios de prueba de la demo</summary>
+            <table>
+              <thead>
+                <tr><th scope="col">Rol</th><th scope="col">Usuario</th><th scope="col">Contraseña</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Administrador</td>
+                  <td><button class="copy" data-copy="admin@disminltda.com">admin@disminltda.com</button></td>
+                  <td><button class="copy" data-copy="Admin@01">Admin@01</button></td>
+                </tr>
+                <tr>
+                  <td>Técnico</td>
+                  <td><button class="copy" data-copy="tecnico@disminltda.com">tecnico@disminltda.com</button></td>
+                  <td><button class="copy" data-copy="Tecnico@01">Tecnico@01</button></td>
+                </tr>
+                <tr>
+                  <td>Representante</td>
+                  <td><button class="copy" data-copy="Representante1@disminltda.com">Representante1@disminltda.com</button></td>
+                  <td><button class="copy" data-copy="Representante@01">Representante@01</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="note">Toca un usuario o una contraseña para copiarlo. Cada rol ve cosas distintas.</p>
+          </details>
+
+          <div class="actions">
+            <a class="pill solid" href="https://appdemo.codefp.com/" target="_blank" rel="noopener"><svg class="i"><use href="#i-link"/></svg> Abrir la demo</a>
           </div>
-        </article>
+        </div>
+        <p class="date">2025 – 2026</p>
+      </article>
+    </section>
 
-        <article class="entry">
-          <p class="when">Nov 2023 – Jun 2025</p>
-          <div>
-            <h3>Técnico de mantenimiento</h3>
-            <p class="where">DISMIN LTDA., Bogotá</p>
-            <p>Instalación, diagnóstico y mantenimiento preventivo y correctivo de aires acondicionados industriales y de precisión. Rehice la parte eléctrica de varios equipos, lo que bajó el tiempo de las reparaciones. Aquí vi el problema de las actas que luego resolví con Dismin+.</p>
-          </div>
-        </article>
+    <!-- Formación -->
+    <section class="section">
+      <h2><svg class="i"><use href="#i-cap"/></svg> Formación</h2>
 
-        <p class="ref">Referencia: Oscar Anaya, representante legal de DISMIN LTDA. <button class="copy" data-copy="3176408175">317 640 8175</button></p>
-      </section>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-cap"/></svg></span>
+        <div class="card-body">
+          <h3>Ingeniería de Sistemas</h3>
+          <p class="sub">Escuela Tecnológica Instituto Técnico Central (ETITC)</p>
+          <p class="desc">Séptimo semestre.</p>
+        </div>
+        <p class="date">En curso</p>
+      </article>
 
-      <section class="block" id="herramientas">
-        <h2>Con qué trabajo</h2>
-        <dl class="tools">
-          <div><dt>Backend</dt><dd>PHP 8 y Laravel 12, APIs REST, Sanctum, roles y permisos.</dd></div>
-          <div><dt>Frontend</dt><dd>Nuxt 4, Vue 3 (Composition API), JavaScript, PWA, CSS y Tailwind.</dd></div>
-          <div><dt>Datos</dt><dd>MySQL: modelado, normalización, triggers, procedimientos almacenados, transacciones.</dd></div>
-          <div><dt>Servidores</dt><dd>Linux (Ubuntu y Debian), Docker Compose, Cloudflare, Oracle Cloud, Git.</dd></div>
-        </dl>
-      </section>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-cap"/></svg></span>
+        <div class="card-body">
+          <h3>Técnico Profesional en Computación</h3>
+          <p class="sub">ETITC</p>
+        </div>
+        <p class="date">2025</p>
+      </article>
 
-      <section class="block" id="estudios">
-        <h2>Estudios</h2>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-cap"/></svg></span>
+        <div class="card-body">
+          <h3>Ingeniero Electromecánico</h3>
+          <p class="sub">ETITC</p>
+          <p class="desc">Tarjeta profesional desde 2023.</p>
+        </div>
+        <p class="date">2022</p>
+      </article>
 
-        <article class="entry">
-          <p class="when">En curso</p>
-          <div>
-            <h3>Ingeniería de Sistemas</h3>
-            <p class="where">Escuela Tecnológica Instituto Técnico Central (ETITC), séptimo semestre</p>
-          </div>
-        </article>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-award"/></svg></span>
+        <div class="card-body">
+          <h3>Certificación en Automatización Industrial</h3>
+          <p class="sub">ETITC y FESTO Didactic</p>
+          <p class="desc">Electroneumática y control con PLC.</p>
+        </div>
+        <p class="date">2021</p>
+      </article>
 
-        <article class="entry">
-          <p class="when">2025</p>
-          <div>
-            <h3>Técnico Profesional en Computación</h3>
-            <p class="where">ETITC</p>
-          </div>
-        </article>
+      <article class="card">
+        <span class="icon-badge"><svg class="i"><use href="#i-cap"/></svg></span>
+        <div class="card-body">
+          <h3>Técnico en Instalación de Redes de Computadores</h3>
+          <p class="sub">SENA</p>
+        </div>
+        <p class="date">2014</p>
+      </article>
+    </section>
 
-        <article class="entry">
-          <p class="when">2022</p>
-          <div>
-            <h3>Ingeniero Electromecánico</h3>
-            <p class="where">ETITC. Tarjeta profesional desde 2023.</p>
-          </div>
-        </article>
+    <hr>
 
-        <article class="entry">
-          <p class="when">2021</p>
-          <div>
-            <h3>Certificación en Automatización Industrial</h3>
-            <p class="where">ETITC y FESTO Didactic: electroneumática y PLC.</p>
-          </div>
-        </article>
+    <footer class="footer">
+      <nav class="media" aria-label="Contacto">
+        <a class="pill solid" href="mailto:cafernandezs@itc.edu.co"><svg class="i"><use href="#i-mail"/></svg> Correo</a>
+        <a class="pill" href="https://wa.me/573178546723" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg> WhatsApp</a>
+        <a class="pill" href="assets/cv_carlos_fernandez.pdf" target="_blank" rel="noopener"><svg class="i"><use href="#i-file"/></svg> CV</a>
+        <a class="pill round" href="https://github.com/ingcarfer" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+        <a class="pill round" href="https://www.linkedin.com/in/carlos-alfonso-fern%C3%A1ndez-salas" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+      </nav>
+      <p>cafernandezs@itc.edu.co <button class="copy small" data-copy="cafernandezs@itc.edu.co">Copiar</button></p>
+      <p class="credit">Diseño basado en la <a href="https://github.com/mouredev/portafolio-template" target="_blank" rel="noopener">plantilla de portafolio de MoureDev</a>.</p>
+    </footer>
 
-        <article class="entry">
-          <p class="when">2014</p>
-          <div>
-            <h3>Técnico en Instalación de Redes de Computadores</h3>
-            <p class="where">SENA</p>
-          </div>
-        </article>
-      </section>
-
-      <footer class="foot">
-        <p>¿Te interesa mi perfil? Escríbeme a <a href="mailto:cafernandezs@itc.edu.co">cafernandezs@itc.edu.co</a> <button class="copy small" data-copy="cafernandezs@itc.edu.co">Copiar</button> o por <a href="https://wa.me/573178546723" target="_blank" rel="noopener">WhatsApp</a>.</p>
-      </footer>
-
-    </main>
-  </div>
+  </main>
 
   <p class="toast" id="toast" role="status" aria-live="polite"></p>
 
