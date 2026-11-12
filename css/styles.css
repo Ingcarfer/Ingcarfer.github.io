@@ -217,7 +217,9 @@ hr { width: 100%; border: 0; border-top: 1px solid var(--borde); margin: 0; }
 .demo td { padding: 0.45rem 1rem; border-top: 1px solid var(--borde); vertical-align: top; }
 .note { font-size: 0.85rem; color: var(--gris-2); padding: 0 1rem 0.8rem; margin: 0; }
 
-@media (max-width: 34rem) {
+/* Hasta tablet, la tabla de usuarios se muestra como lista para que no corte palabras */
+@media (max-width: 52rem) {
+  .demo table { margin: 0; }
   .demo thead { display: none; }
   .demo tr { display: grid; gap: 0.2rem; padding: 0.6rem 1rem; border-top: 1px solid var(--borde); }
   .demo td { border: 0; padding: 0; }
@@ -235,7 +237,7 @@ hr { width: 100%; border: 0; border-top: 1px solid var(--borde); margin: 0; }
   padding: 0;
   cursor: pointer;
   text-align: left;
-  word-break: break-all;
+  overflow-wrap: anywhere;
   border-bottom: 1px dashed var(--gris-2);
 }
 .copy:hover { color: var(--verde-texto); border-bottom-color: var(--verde-texto); }
@@ -246,7 +248,7 @@ hr { width: 100%; border: 0; border-top: 1px solid var(--borde); margin: 0; }
   border: 1px solid var(--borde);
   border-radius: 999px;
   padding: 0.05rem 0.6rem;
-  word-break: normal;
+  overflow-wrap: normal;
 }
 .copy.small:hover { border-color: var(--verde-texto); }
 
